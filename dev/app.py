@@ -15,7 +15,6 @@ def create_app(config=None):
         db.create_all()
     
     # Register blueprints, set up routes, etc.
-    # app.register_blueprint(...)
     # app.add_url_rule(...)
 
     from dev.main import home
