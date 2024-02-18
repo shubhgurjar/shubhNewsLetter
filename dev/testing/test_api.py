@@ -24,11 +24,11 @@ if __name__ == "__main__":
     tester = APITester("http://localhost:5000")
     
     # Test the create_user API
-    response_create_user = tester.test_create_user("test_user1", "test1@example.com", "password123")
+    response_create_user = tester.test_create_user("test_user3", "test3@example.com", "password123")
     print("Create User - Response status code:", response_create_user.status_code)
     print("Create User - Response content:", response_create_user.json())
 
-    response_create_user = tester.test_create_user("test_user2", "test2@example.com", "password456")
+    response_create_user = tester.test_create_user("test_user4", "test4@example.com", "password456")
     print("Create User - Response status code:", response_create_user.status_code)
     print("Create User - Response content:", response_create_user.json())
     
