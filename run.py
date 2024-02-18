@@ -1,5 +1,5 @@
 from dev.app import create_app
-from dev.configs import config
+from dev.utils import config
 
 app = create_app(config=config.Config)
 

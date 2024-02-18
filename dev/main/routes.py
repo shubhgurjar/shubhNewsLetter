@@ -9,10 +9,8 @@ def home():
     return render_template("home.html")
 
 
-#Setting route to about page
 @main.route("/about")
 def about():
-    # return "<h1>About Page</h1>"
     return render_template('about.html', title='About')
 
 @main.route('/create_user', methods=['POST'])
